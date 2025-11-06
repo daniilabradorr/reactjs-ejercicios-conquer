@@ -1,16 +1,35 @@
-# React + Vite
+# ReactJS – Entrega de Ejercicios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Repositorio con 9 ejercicios básicos de React** desarrollados para que **ustedes profesores me corrijan los ejercicos**.
 
-Currently, two official plugins are available:
+Cada ejercicio está **comentado**, poniendo foco en el uso de **useState, useEffect, useMemo y useRef**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧰 Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React 18**
+* **Vite**
+* **React Router DOM** (HashRouter)
+* **JavaScript** (ES Modules)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Hooks usados
+* `**useState**`: fuente de verdad de la UI; cada `setState` re-renderiza.
+* `**useEffect**`: sincroniza efectos con el mundo exterior; devuelve **función de limpieza**.
+* `**useMemo**`: **memoriza** cálculos derivados para no recomputar si no cambian dependencias.
+* `**useRef**`: guarda valores **mutables** que no provocan re-render (ids de intervalos, referencias DOM).
+
+---
+
+## ✅ Checklist de corrección (para usted profesor)
+
+* [x] Estructura por componentes (`Card`, `Button`) y páginas separadas.
+* [x] Rutas `/`, `/1…/9` funcionando con `HashRouter`.
+* [x] **Inmutabilidad** en operaciones de lista (`map`, `filter`, `spread`).
+* [x] `useEffect` con **limpieza** donde corresponde (Ej1, Ej6, Ej9 persistencia).
+* [x] `useMemo` aplicado con dependencias correctas (Ej4, Ej8).
+* [x] `useRef` para el intervalo (Ej6).
+* [x] Accesibilidad mínima (`labels`) y **Enter** en Ej3/Ej9.
+* [x] Sin warnings de consola en ejecución normal.
